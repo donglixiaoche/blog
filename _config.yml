@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hojun
-subtitle:
-description: 好少年光芒万丈
+title: Steven's blog
+subtitle: You must strive to find your own voice
+description: 
 keywords:
-author: hojun
-language: zh-cn
+author: John Doe
+language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -38,9 +38,9 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlight: 
-  enable: false
-  line_number: false
+highlight:
+  enable: true
+  line_number: true
   auto_detect: false
   tab_replace:
   
@@ -73,33 +73,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Sakura
+theme: Material-T
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: 
-    # github: git@github.com:honjun/honjun.github.io.git
-    # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://git.coding.net/hojun/hojun.git
-  branch: master
-
-# backup
-backup:
-  type: git
-  message: backup my blog of https://yourname.github.io/
-  repository:
-    # github: https://github.com/honjun/honjun.github.io.git,backup
-    coding: https://git.coding.net/hojun/hojun.git,backup
-
-#RSS
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content:
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
+  type:

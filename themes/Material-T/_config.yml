@@ -1,0 +1,101 @@
+#---------------------------
+# Material-T
+# Author: rook1e
+# Github: https://github.com/0x2e/Material-T
+#---------------------------
+
+#---------------------------
+# 全局
+# Site
+#---------------------------
+favicon: /favicon.png
+apple_touch_icon: /apple-touch-icon.png
+
+
+#---------------------------
+# 首页
+# Index Page
+#---------------------------
+index: 
+  banner_img: http://pryb8y3zu.bkt.clouddn.com/1515081692.jpg
+  banner_img_height: 100  # available: 0 - 100
+  subtitle:
+    enable: true
+  auto_excerpt:
+    enable: true
+    length: 300
+  post_url_target: _self  # available: _blank | _self
+  post_info:
+    enable: true
+
+
+#---------------------------
+# 导航栏
+# Head Navbar
+#---------------------------
+navbar:
+  menu:
+    Home: /
+    Archives: /archives/
+    About: /about/
+
+
+#---------------------------
+# 文章页
+# Post Page
+#---------------------------
+post: 
+  banner_img: https://i.imgur.com/oADD1Ip.jpg
+  banner_img_height: 70  # available: 0 - 100
+  toc: 
+    enable: true
+  highlight:
+    enable: true
+    theme: tomorrow-night-eighties # available: github | tomorrow | tomorrow-night | tomorrow-night-eighties
+  copyright:
+    enable: true
+    content: 本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC">CC BY-SA 3.0协议</a> 。转载请注明出处！
+  comments: 
+    enable: false
+    type: disqus  # available: disqus | valine
+
+# Disqus
+disqus:
+  shortname: # your shortname
+
+# Valine
+# You can get your appid and appkey from https://leancloud.cn
+# More info available at https://valine.js.org
+valine:
+  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid:  # your leancloud application appid
+  appkey:  # your leancloud application appkey
+  notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: 说点什么 # comment box placeholder
+  avatar: retro # gravatar style https://valine.js.org/avatar.html
+  pageSize: 10 # pagination size
+  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+
+
+#---------------------------
+# 归档页
+# Archive Page
+#---------------------------
+archive: 
+  banner_img: http://pryb8y3zu.bkt.clouddn.com/1504107257.png
+  banner_img_height: 100  # available: 0 - 100
+
+#---------------------------
+# 关于页
+# About Page
+#---------------------------
+about:
+  banner_img: https://i.imgur.com/rVtDsho.png
+  banner_img_height: 80  # available: 0 - 100
+  avatar: http://pryb8y3zu.bkt.clouddn.com/WechatIMG12.jpeg
+  name: Steven
+  introduce: 前端码农 / 单身狗 / 凯尔特人球迷 / 游戏
+  icons: 
+    github: https://github.com/Stevens1995
+    twitter: https://twitter.com/hsping1995

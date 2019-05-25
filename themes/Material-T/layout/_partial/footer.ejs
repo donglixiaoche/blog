@@ -1,0 +1,29 @@
+<footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank"><b>HEXO</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/0x2e/Material-T" target="_blank"> <b>Material-T</b></a>
+  </div>
+</footer>
+
+  <!-- SCRIPTS -->
+  <%- js("https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/jquery-3.3.1.min.js") %>
+  <%- js("https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/popper.min.js") %>
+  <%- js("https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/bootstrap.min.js") %>
+  <%- js("https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/mdb.min.js") %>
+  <%- js("js/main.js") %>
+  <% if(is_post()){ %>
+    <% if(theme.post.toc.enable){ %>
+      <%- js("https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js") %>
+    <% } %>
+    <%- js("/js/post.js") %>
+    <% if(theme.post.highlight.enable){ %>
+      <%- js("js/plugins/prettify.js") %>
+      <script>
+          $(document).ready(function(){
+              $('pre').addClass('prettyprint linenums');
+              prettyPrint();
+          })
+      </script>
+    <% } %>
+  <% } %>

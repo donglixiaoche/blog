@@ -45,18 +45,18 @@ navbar:
 # Post Page
 #---------------------------
 post: 
-  banner_img: https://i.imgur.com/oADD1Ip.jpg
-  banner_img_height: 70  # available: 0 - 100
+  banner_img: http://pryb8y3zu.bkt.clouddn.com/1504107306.png
+  banner_img_height: 40  # available: 0 - 100
   toc: 
     enable: true
   highlight:
     enable: true
-    theme: tomorrow-night-eighties # available: github | tomorrow | tomorrow-night | tomorrow-night-eighties
+    theme: github # available: github | tomorrow | tomorrow-night | tomorrow-night-eighties
   copyright:
-    enable: true
+    enable: false
     content: 本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC">CC BY-SA 3.0协议</a> 。转载请注明出处！
   comments: 
-    enable: false
+    enable: true
     type: disqus  # available: disqus | valine
 
 # Disqus
@@ -84,15 +84,17 @@ valine:
 #---------------------------
 archive: 
   banner_img: http://pryb8y3zu.bkt.clouddn.com/1504107257.png
-  banner_img_height: 100  # available: 0 - 100
+  banner_img_height: 30  # available: 0 - 100
+  subtitle:
+    enable: false
 
 #---------------------------
 # 关于页
 # About Page
 #---------------------------
 about:
-  banner_img: https://i.imgur.com/rVtDsho.png
-  banner_img_height: 80  # available: 0 - 100
+  banner_img: http://pryb8y3zu.bkt.clouddn.com/1504106118.png
+  banner_img_height: 65  # available: 0 - 100
   avatar: http://pryb8y3zu.bkt.clouddn.com/WechatIMG12.jpeg
   name: Steven
   introduce: 前端码农 / 单身狗 / 凯尔特人球迷 / 游戏

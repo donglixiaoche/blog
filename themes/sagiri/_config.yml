@@ -856,7 +856,7 @@ header_bg: /images/header-mai.jpg
 
 card:
   avatar: /images/card.jpg
-  name: <span style="opacity:.2;">网红</span>DIYgod
+  # name: <span style="opacity:.2;">网红</span>DIYgod
   description: 你能抓到我么？
 
 footer:

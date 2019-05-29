@@ -853,7 +853,7 @@ images: images
 header_bg: /images/header-mai.jpg
 
 card:
-  avatar: /images/card.jpg
+  avatar: /images/card2.gif
   # name: <span style="opacity:.2;">网红</span>DIYgod
   description: 你能抓到我么？
 

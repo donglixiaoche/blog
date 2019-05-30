@@ -30,14 +30,14 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "DIYgod,blog"
+keywords: "动力小车,blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+# rss:
 
-emailfeed: http://eepurl.com/dEnzz1
+# emailfeed: http://eepurl.com/dEnzz1
 
 # ---------------------------------------------------------------
 # SEO Settings

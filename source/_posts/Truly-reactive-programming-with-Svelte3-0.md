@@ -25,6 +25,7 @@ tags:
 ## 首先，关于React
 在我开始讨论为什么Svelte如此强大之前，我们先来看看Dan的一条推文，一段时间后我们再来看看其中表达的意思：
 <!-- todo 这里需要加一张推文图片 -->
+![react is not fully reactive](http://pryb8y3zu.bkt.clouddn.com/react-is-not-fully-reactive.png)
 
 **另一份免责声明**：这篇文章也不是以任何方式批评和攻击React。我只是简单地决定用React作为一个学习案例，因为此文的大部分读者应该都用过一点React。React是跟Svelte对比的一个很好地案例。
 
@@ -62,3 +63,4 @@ Svelte不是一个包或者框架。Svelte是一个编译器，它接受原生�
 
 而Svelte通过另一种方式来实现反应性。
 
+未完待续...

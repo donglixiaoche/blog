@@ -24,8 +24,9 @@ tags:
 
 ## 首先，关于React
 在我开始讨论为什么Svelte如此强大之前，我们先来看看Dan的一条推文，一段时间后我们再来看看其中表达的意思：
-<!-- todo 这里需要加一张推文图片 -->
-![react is not fully reactive](http://pryb8y3zu.bkt.clouddn.com/react-is-not-fully-reactive.png)
+
+<blockquote class="twitter-tweet" data-lang="zh-cn"><p lang="en" dir="ltr">React is not fully reactive</p>&mdash; Dan Abramov (@dan_abramov) <a href="https://twitter.com/dan_abramov/status/1025801430668664833?ref_src=twsrc%5Etfw">2018年8月4日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **另一份免责声明**：这篇文章也不是以任何方式批评和攻击React。我只是简单地决定用React作为一个学习案例，因为此文的大部分读者应该都用过一点React。React是跟Svelte对比的一个很好地案例。
 

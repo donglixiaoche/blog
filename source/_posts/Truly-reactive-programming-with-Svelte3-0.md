@@ -138,3 +138,10 @@ Svelte自动对数据的更新做出改变，而不需要用户关系改变的�
 记得我说过Svelte可以用更少的代码来做到相同的工作吗？我是认真的！看看下面这个组件分别用Svelte和React实现的版本：
 
 ![Svelte & React](https://i1.wp.com/cdn-images-1.medium.com/max/1600/1*y8KNWov5UwulVryUPq6srw@2x.png?ssl=1)
+
+__**17行代码 vs 29行代码**__
+
+上述两个应用实现的功能几乎完全一样，但是你可以看到在`React.js`中，我们不得不编写更多地代码 ---- `Angular`里面更过分。
+
+![Svelte & React](https://i2.wp.com/cdn-images-1.medium.com/max/1600/1*129rCsjvqwpczQ5Ld_U44A@2x.png?ssl=1)
+

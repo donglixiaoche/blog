@@ -84,3 +84,57 @@ Svelte从[Observable]()运行代码的方式中获取到了灵感，以拓扑代
 -`secondNumber`依赖于`square`和`firstNumber`,`square`已经被初始化，但是`firstNumber`还没有被初始化，初始化`firstNumber`
 3. OK，`firstNumber`已经被初始化，现在可以用`firstNumber`和`square`来初始化`secondNumber`
 -还有其他的变量需要初始化吗？没有-执行代码
+
+乍一看，这段代码似乎依然是从上到下执行的，但是仔细看的话，你会发现实际上代码执行时会有一些跳转。
+
+当代码执行到第四行时，编译器发现`firstNumber`并没有被定义，于是编译器暂停解释该语句，并且在你的代码中寻找该变量的定义。当找到`firstNumber`在第五行被定义后，第五行会先于第四行执行，当第五行执行完毕后，再返回执行第四行。
+
+_**TL;DR：如果语句A依赖于语句B，不管语句声明的顺序如何，B将先于A执行**_
+
+Svelte是如何应用上述的原理以实现真正的反应式呢？在Svelte中，你可以用一个标识符来表示一个语句，像这样：`$: foo = bar`。这样做之后，语句`foo = bar`就有了一个表示`$`（上述语句在严格模式下会报错）
+
+当Svelte看到任何有`$`前缀的语句时，编译器就知道左边的变量由右边的变量导出。于是，现在我们有了将一个变量绑定在另一个变量的方法。
+
+Reactivity!(反应式!)这意味着现在我们用JavaScript的原生API来实现真正的响应式，而无需再摆弄一些三方API，比如`this.setState`。
+
+下面的代码是这样写的实际效果：
+
+```javascript
+// vanilla js
+let foo = 10;
+let bar = foo + 10; // bar is now 20
+foo = bar // bar is still 20 (no reactivity)
+bar = foo + 5 // now bar becomes 25
+// svelte js
+let foo = 10;
+$: bar = foo + 10; // bar is now 20
+foo = 15 // bar is now 25 because it is bound to the value of foo
+```
+
+在上述的Svelte代码中，我们并不需要将`foo`的新值重新赋值给`bar`，代码会帮我们自动处理。当你把`foo`的值更改为15时，`bar`会自动更新为25。
+
+上述的Svelte代码经过编译后，大概便变成这样：
+```javascript
+... omitted for brevity ...
+function instance($$self, $$props, $$invalidate) {
+   let foo = 10; // bar is now 20
+   $$invalidate('foo', foo = 15) // bar is now 25 because it is bound to the value of foo
+   let bar;
+   $$self.$$.update = ($$dirty = { foo: 1 }) => {
+     if ($$dirty.foo) { $$invalidate('bar', bar = foo + 19); }
+   };
+   return { bar };
+ }
+... omitted for brevity ...
+```
+**花点时间认真看看上面的代码，真的，认真看下。**
+
+你看到`foo`是如何更新的吗？即使是在`bar`没有被定义之前。（我暂时没看懂...）这是因为Svelte的编译器以拓扑的顺序来执行代码，而不是自上而下。
+
+Svelte自动对数据的更新做出改变，而不需要用户关系改变的内容和时间，这一切都是自动进行的。用户可以专注于代码逻辑，让Svelte根据应用状态的改变来调节UI。
+
+### 简洁
+
+记得我说过Svelte可以用更少的代码来做到相同的工作吗？我是认真的！看看下面这个组件分别用Svelte和React实现的版本：
+
+![Svelte & React](https://i1.wp.com/cdn-images-1.medium.com/max/1600/1*y8KNWov5UwulVryUPq6srw@2x.png?ssl=1)

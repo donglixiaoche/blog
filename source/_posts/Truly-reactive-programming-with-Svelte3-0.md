@@ -8,7 +8,7 @@ tags:
 - 新鲜货
 ---
 
-> 本文是一篇翻译过来的文章，原文地址：[https://blog.logrocket.com/truly-reactive-programming-with-svelte-3-0-321b49b75969](hhttps://blog.logrocket.com/truly-reactive-programming-with-svelte-3-0-321b49b75969)
+> 本文是一篇翻译过来的文章，原文地址：[https://blog.logrocket.com/truly-reactive-programming-with-svelte-3-0-321b49b75969](https://blog.logrocket.com/truly-reactive-programming-with-svelte-3-0-321b49b75969)
 
 ![Svelte](https://cdn-images-1.medium.com/max/1200/1*2hDcp8VSEJk74trofc3JtQ.jpeg)
 

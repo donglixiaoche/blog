@@ -30,8 +30,8 @@ chrome收到不带合法跳转链接的302响应后，停留在空白页，不�
 firefox收到响应后，又重复请求了几次相同的路由，当然结果也不会变，最后在页面显示 The page isn't redirecting properly
 
 ### IE
-![IE302-1](../images/20190814/IE302-1.jpg)
-![IE302-2](../images/20190814/IE302-2.jpg)
+![IE302-1](../images/20190814/IE302-1.png)
+![IE302-2](../images/20190814/IE302-2.png)
 
 IE收到带有空Location字段的302http响应后，自作主张地又发一次请求，请求地址跟之前一样，但是路由变成了上级路由，比如这里从/test/wtf变为/test
 

@@ -6,7 +6,8 @@ tags:
 - 刨坑
 ---
 
-## 记一次 http 302导致的坑
+## 记一次 http 302的坑
+<!-- more -->
 
 今天帮同事定位一个302重定向的问题，结果发现是由于 http302在各个不同浏览器中的行为差异导致的，在这里记录一下。
 
@@ -44,5 +45,7 @@ IE又往相同的地址发了121次请求...醉了，试了很多次，都是121
 
 以上，IE老是整些有的没有。
 
+个人推特，嘿嘿嘿
+<blockquote class="twitter-tweet"><p lang="zh" dir="ltr">对于http 302状态码，响应头里不带location字段的时候，IE11的处理真是绝了，最新的chrome和firefox都是不跳转，IE非得请求一下上一级路径 <a href="https://twitter.com/hashtag/%E7%BB%99IE%E8%B7%AA%E4%BA%86?src=hash&amp;ref_src=twsrc%5Etfw">#给IE跪了</a><a href="https://t.co/IxlLUcdtaC">https://t.co/IxlLUcdtaC</a></p>&mdash; hsping (@hsping1995) <a href="https://twitter.com/hsping1995/status/1161652763392016384?ref_src=twsrc%5Etfw">August 14, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 

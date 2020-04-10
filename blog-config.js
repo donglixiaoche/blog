@@ -10,7 +10,8 @@ const config = {
   // you should split access_token in to pieces
   // otherwise access_token will expired after you commit to github
   // how to get access_token http://www.fiskercheung.com/#/id/6
-  accessTokens: [['5', 'a41e75c8b2', '2c70d70b08ae21', '5cd774758e3b8b0']],
+  
+  accessTokens: [['d138202acb2444ae0c72', '773feda191883d0f4638']],
   // cache
   // set false to disable cache
   cache: {
@@ -19,8 +20,8 @@ const config = {
     article: DEFAULT_ARTICLE_CACHE_TIME,
   },
 
-  name: "fisker's blog",
-  owner: 'fisker',
+  name: "Steven's Blog",
+  owner: 'Steven',
   repo: 'blog',
   // repoId: '',
   pageSize: 30,

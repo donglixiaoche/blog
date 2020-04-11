@@ -1,25 +1,24 @@
 {
-  "name": "fisker-blog",
+  "name": "stevens1995-blog",
   "version": "1.0.0",
   "private": true,
-  "description": "fisker's blog",
+  "description": "stevens1995's blog",
   "keywords": [
     "blog",
     "steven"
   ],
-  "homepage": "https://github.com/fisker/blog#readme",
+  "homepage": "https://github.com/stevens1995/blog#readme",
   "bugs": {
-    "url": "https://github.com/fisker/blog/issues"
+    "url": "https://github.com/stevens1995/blog/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fisker/blog.git"
+    "url": "git+https://github.com/stevens1995/blog.git"
   },
   "license": "MIT",
   "author": {
-    "name": "fisker Cheung",
-    "email": "lionkay@gmail.com",
-    "url": "https://www.fiskercheung.com/"
+    "name": "stevens",
+    "url": "https://stevens1995.github.io/blog/"
   },
   "sideEffects": false,
   "main": "index.js",

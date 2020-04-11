@@ -5,7 +5,7 @@
   "description": "fisker's blog",
   "keywords": [
     "blog",
-    "fisker"
+    "steven"
   ],
   "homepage": "https://github.com/fisker/blog#readme",
   "bugs": {
@@ -63,12 +63,6 @@
     "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.5",
     "@commitlint/cli": "8.3.5",
-    "@fisker/commitlint-config": "1.1.7",
-    "@fisker/eslint-config": "2.1.0",
-    "@fisker/husky-config": "2.1.0",
-    "@fisker/lint-staged-config": "2.1.0",
-    "@fisker/prettier-config": "2.1.0",
-    "@fisker/stylelint-config": "2.1.0",
     "babel-preset-minify": "0.5.1",
     "browser-sync": "2.26.7",
     "cz-conventional-changelog": "3.1.0",

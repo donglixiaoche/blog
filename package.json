@@ -1,94 +1,85 @@
 {
-  "name": "stevens1995-blog",
-  "version": "1.0.0",
+  "name": "overreacted",
   "private": true,
-  "description": "stevens1995's blog",
-  "keywords": [
-    "blog",
-    "steven"
-  ],
-  "homepage": "https://github.com/stevens1995/blog#readme",
+  "engines": {
+    "node": "12.x"
+  },
+  "description": "Overreacted",
+  "version": "1.0.0",
+  "author": "Dan Abramov <dan.abramov@me.com>",
   "bugs": {
-    "url": "https://github.com/stevens1995/blog/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stevens1995/blog.git"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "stevens",
-    "url": "https://stevens1995.github.io/blog/"
-  },
-  "sideEffects": false,
-  "main": "index.js",
-  "scripts": {
-    "build": "run-s build:template-minify build:template-compile build:gulp",
-    "build:gulp": "set NODE_ENV=production && gulp build",
-    "build:template-compile": "lodash exports=none iife=\"(function(){%output%;return templates})()\" template=\".cache/*.jst\" -o \".cache/templates.js\"",
-    "build:template-minify": "node ./scripts/minify-template.js",
-    "clean": "run-p clean:*",
-    "clean:dist": "del-cli dist",
-    "clean:docs": "del-cli docs",
-    "dev": "npm run build-template && gulp",
-    "format": "run-p format:*",
-    "format:eslint": "yarn lint:eslint --fix",
-    "format:markdown": "yarn lint:markdown --fix",
-    "format:package-json": "sort-package-json \"package.json\" \"packages/*/package.json\"",
-    "format:prettier": "yarn lint:prettier --write",
-    "format:stylelint": "yarn lint:stylelint --fix",
-    "lint": "run-p lint:*",
-    "lint:eslint": "eslint \"**/*.{js,mjs,vue}\"",
-    "lint:markdown": "markdownlint \"**/*.md\" --ignore \"**/node_modules/**\"",
-    "lint:package-json": "yarn run format:package-json --check",
-    "lint:prettier": "prettier \"**/*.{css,html,js,json,less,md,scss,ts,vue,yaml,yml}\" --check",
-    "lint:stylelint": "stylelint \"**/*.{css,scss,less}\"",
-    "release": "sh ./scripts/publish.sh",
-    "test": "echo \"Error: no test specified\""
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "url": "https://github.com/gaearon/overreacted.io/issues"
   },
   "dependencies": {
-    "es6-promise": "4.2.8",
-    "highlight.js": "9.18.1",
-    "localforage": "1.7.3",
-    "marked": "0.8.2",
-    "primer-markdown": "4.0.0"
+    "gatsby": "^2.0.76",
+    "gatsby-plugin-catch-links": "^2.0.9",
+    "gatsby-plugin-ebook": "^1.0.2",
+    "gatsby-plugin-feed": "^2.0.8",
+    "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-i18n": "^0.4.2",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.16",
+    "gatsby-plugin-typography": "^2.2.0",
+    "gatsby-remark-autolink-headers": "2.0.12",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-remark-prismjs": "^3.0.0",
+    "gatsby-remark-responsive-iframe": "^2.0.5",
+    "gatsby-remark-smartypants": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.12",
+    "gatsby-transformer-remark": "^2.1.17",
+    "gatsby-transformer-sharp": "^2.1.9",
+    "husky": "^4.2.5",
+    "lint-staged": "^8.1.0",
+    "lodash": "^4.17.11",
+    "prismjs": "^1.15.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17",
+    "typography-theme-wordpress-2016": "^0.15.10"
   },
   "devDependencies": {
-    "@babel/core": "7.9.0",
-    "@babel/preset-env": "7.9.5",
-    "@commitlint/cli": "8.3.5",
-    "babel-preset-minify": "0.5.1",
-    "browser-sync": "2.26.7",
-    "cz-conventional-changelog": "3.1.0",
-    "del-cli": "3.0.0",
-    "eslint": "6.8.0",
-    "gulp": "4.0.2",
-    "gulp-autoprefixer": "7.0.1",
-    "gulp-babel": "8.0.0",
-    "gulp-clean-css": "4.3.0",
-    "gulp-dest": "0.2.3",
-    "gulp-header": "2.0.9",
-    "gulp-rename": "2.0.0",
-    "gulp-sass": "4.0.2",
-    "gulp-size": "3.0.0",
-    "gulp-sourcemaps": "2.6.5",
-    "gulp-template": "5.0.0",
-    "husky": "4.2.5",
-    "lint-staged": "10.1.3",
-    "lodash-cli": "4.17.5",
-    "markdownlint-cli": "0.22.0",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.0.4",
-    "sort-package-json": "1.41.0",
-    "stylelint": "13.3.1"
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^1.2.0",
+    "glob": "^7.1.3",
+    "prettier": "^1.14.2"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "homepage": "https://overreacted.io",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "rm -rf public && rm -rf .cache && gatsby build",
+    "now-build": "gatsby build",
+    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) overreacted.io",
+    "dry": "yarn build && cp now.json public/ && cd public && now",
+    "js-to-jsx": "node src/utils/js-to-jsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{gatsby-*.js,src/**/*.{js,jsx,json,css}}": [
+      "yarn format",
+      "git add"
+    ],
+    "src/pages/**/*.md": [
+      "yarn run js-to-jsx",
+      "git add"
+    ]
+  },
+  "resolutions": {
+    "**/sharp": "^0.23"
   }
 }

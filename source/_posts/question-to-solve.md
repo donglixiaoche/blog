@@ -7,6 +7,7 @@ tags: 问题
 - MicroTask vs MacroTask
 - TCP协议
 - Http2
+  1. 二进制协议和文本协议的区别
 - React Fiber
 - Vue3
 - Koa2源码

@@ -36,3 +36,5 @@ Cache-Control字段可以设置的directive比较多，所以我按照下面的�
 expires字段指定一个timestamp字符串，表示缓存的过期时间。要注意cache-control字段下的max-age和s-maxage比这个字段的优先级要高，但是为了兼容性，一般这两个都会设置。
 
 用expires设置过期时间，验证时，会使用if-modified-since字段来验证，问题是只要设置时间格式，就会有精度的问题，精度范围之外发生多次改变时，验证就会不准确。ETag就解决了这个问题。
+
+还有一个问题就是客户端和服务端时区不一致的时候，设置expires的也会问题。

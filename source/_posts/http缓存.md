@@ -10,7 +10,7 @@ tags:
 手上做的项目比较小，由于也是内网使用的原因，传输比较快，也没必要使用缓存。面试需要...总结一下http缓存字段。
 
 ## TL;DR
-现代浏览器中，http1.1缓存相关的需求，用cache-control(`在写这个单词的时候，我纠结了一下是用大写还是小写，发现http头部字段是case-insenstive的`)字段加max-age字段就可以全部实现了，其他的都是为了兼容而做的。
+现代浏览器中，http1.1缓存相关的需求，用cache-control(`在写这个单词的时候，我纠结了一下是用大写还是小写，发现http头部字段是case-insenstive的`)字段加max-age字段就可以全部实现了，其他的都是历史遗留，现在为了兼容性所以仍在使用。
 
 ## Cache-Control
 Cache-Control字段可以设置的directive比较多，所以我按照下面的规则分个类：

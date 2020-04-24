@@ -15,9 +15,9 @@ let c = Promise.resolve(3)
 
 function myAsync(myAwait) {
   let g = myAwait()
-  let result = g.next()
+  let task = g.next()
 
-  call(result)
+  call(task)
   function call(task) {
     if(task.done === true) return
     task.value.then(res => {

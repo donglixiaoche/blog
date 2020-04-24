@@ -1,12 +1,12 @@
 ---
-title: generator-vs-async-and-await
+title: Generator Vs Async & Await
 date: 2020-04-24 16:36:15
 tags:
 ---
 
 一直说es7中的async和await是es6的generator的语法糖，今天尝试写下...
 <!-- more -->
-参考资料: [Ponyfoo](https://ponyfoo.com/articles/es6-generators-in-depth)
+参考资料: [Ponyfoo ES6 Generator in Depth](https://ponyfoo.com/articles/es6-generators-in-depth)
 
 ```javascript
 let a = Promise.resolve(1)

@@ -17,3 +17,4 @@ top: true
 - Block Formatting Context
 - HTTPS
 - DNS解析和DNS缓存
+- yarn.lock 和 package-lock.json

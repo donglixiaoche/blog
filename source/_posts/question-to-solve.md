@@ -18,3 +18,4 @@ top: true
 - HTTPS
 - DNS解析和DNS缓存
 - yarn.lock 和 package-lock.json
+- Intersection Observer API

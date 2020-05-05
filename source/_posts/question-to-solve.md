@@ -11,12 +11,12 @@ top: true
 - React Fiber
 - Vue3
 - Koa2源码
-- Http缓存机制（所有缓存相关的header
+- ~~Http缓存机制（所有缓存相关的header~~
 - Generator vs Async Await
-- Http Content-Type
+- ~~Http Content-Type~~
 - Block Formatting Context
 - HTTPS
-- DNS解析和DNS缓存
+- ~~DNS解析和DNS缓存~~
 - yarn.lock 和 package-lock.json
 - Intersection Observer API
 - https中，浏览器如何验证CA的合法性

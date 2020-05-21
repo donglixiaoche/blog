@@ -34,7 +34,7 @@ function compose (middleware) {
   }
 }
 ```
-这段代码是koajs下一个单独的库，(compose)[https://github.com/koajs/compose]，洋葱模型的核心。
+这段代码是koajs下一个单独的库，[compose](https://github.com/koajs/compose)，洋葱模型的核心。
 
 每次调用`app.use`时，实际都是往`middle`数组里面push一个函数，最终koa所做的就是把这些函数串起来，放到http.createServer的回调函数里面。
 

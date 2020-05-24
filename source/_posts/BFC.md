@@ -20,6 +20,6 @@ BFC，CSS里面很重要的一个概念，要知道BFC，首先我们要知道Fo
 #### Inline Formatting Context
 TODO
 
-当某个元素形成一个上下文之后，该元素会包含其所有的子元素，然后整体作为一个单位在外层上下文中排列。我们经常会用这个特性来解决margin塌陷、父元素中有浮动元素导致高度撑不起来等问题。
+`当某个元素形成一个上下文之后，该元素会包含其所有的子元素，然后整体作为一个单位在外层上下文中排列`。我们经常会用这个特性来解决margin塌陷、父元素中有浮动元素导致高度撑不起来等问题。
 
 除了根元素，还有一些其他的属性可以生成BFC，这里就不列举了...重要的是理解概念，详情参考(MDN文档)[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context]

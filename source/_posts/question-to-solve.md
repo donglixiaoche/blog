@@ -6,8 +6,10 @@ top: true
 
 - MicroTask vs MacroTask
 - TCP协议
+  - 如何实现可靠传输？
+  - 流量控制和拥塞控制
 - Http2
-  1. 二进制协议和文本协议的区别
+  - 二进制协议和文本协议的区别
 - React Fiber
 - Vue3
 - ~~Koa2源码~~

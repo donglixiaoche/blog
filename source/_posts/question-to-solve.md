@@ -24,3 +24,5 @@ top: true
 - https中，浏览器如何验证CA的合法性
 - source map
 - Vue中的nextTick
+- Vue和TypeScript的结合到底好不好，相比于React的差异到底在哪儿？
+- Vue、React、Angular的设计理念，框架的整体原则

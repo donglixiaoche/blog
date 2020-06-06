@@ -18,7 +18,7 @@ BFC，CSS里面很重要的一个概念，要知道BFC，首先我们要知道Fo
 详情参考[FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 #### Inline Formatting Context
-TODO
+`p`元素会形成一个Inline Formatting Context，
 
 `当某个元素形成一个上下文之后，该元素会包含其所有的子元素，然后整体作为一个单位在外层上下文中排列`。我们经常会用这个特性来解决margin塌陷、父元素中有浮动元素导致高度撑不起来等问题。
 

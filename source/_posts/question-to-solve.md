@@ -29,3 +29,5 @@ top: true
 - 前端性能优化总结，常见的优化手段等等
 - Progressive Image Loading
 - Http1.1 Auth
+- UTF-8 的编码方式
+- ES6 Module VS CommonJS Module

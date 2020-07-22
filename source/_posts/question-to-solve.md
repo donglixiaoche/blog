@@ -34,3 +34,4 @@ top: true
 - HTML解析？
 - Service Worker
 - CJS VS ES VS UMD
+- source命令和 . 的作用

@@ -32,6 +32,6 @@ top: true
 - UTF-8 的编码方式
 - ES6 Module VS CommonJS Module
 - HTML解析？
-- Service Worker
+- Service Worker !!!
 - CJS VS ES VS UMD
 - source命令和 . 的作用

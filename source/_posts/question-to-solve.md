@@ -20,6 +20,7 @@ top: true
 - HTTPS
 - ~~DNS解析和DNS缓存~~
 - yarn.lock 和 package-lock.json
+  - pack-lock.json 什么时候会改变，应不应该提交？
 - Intersection Observer API
 - https中，浏览器如何验证CA的合法性
 - source map
@@ -27,3 +28,11 @@ top: true
 - Vue和TypeScript的结合到底好不好，相比于React的差异到底在哪儿？
 - Vue、React、Angular的设计理念，框架的整体原则
 - 前端性能优化总结，常见的优化手段等等
+- Progressive Image Loading
+- Http1.1 Auth
+- UTF-8 的编码方式
+- ES6 Module VS CommonJS Module
+- HTML解析？
+- Service Worker !!!
+- CJS VS ES VS UMD
+- source命令和 . 的作用
